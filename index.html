@@ -1,30 +1,55 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ROCK PAPER SCISSORS</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="index.js" defer></script>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Rock Paper Scissor</title>
 </head>
 <body>
-  <div class="selections">
-    <button class="selection" data-selection="rock">✊</button>
-    <button class="selection" data-selection="paper">✋</button>
-    <button class="selection" data-selection="scissors">✌</button>
-  </div>
-  <div class="results">
-    <div>
-      You:
-      <span class="result-score" data-your-score>0</span>
-    </div>
-    <div data-final-column>
-      Computer:
-      <span class="result-score" data-computer-score>0</span>
-    </div>
-    <!-- <div class="result-selection winner">✊</div>
-    <div class="result-selection">✌</div> -->
-  </div>
+	<section class="game">
+		<!--Title -->
+		<div class="title">Rock Paper Scissor</div>
+		
+		<!--Display Score of player and computer -->
+		<div class="score">
+			<div class="playerScore">
+				<h2>Player</h2>
+				<p class="p-count count">0</p>
+
+			</div>	
+			<div class="computerScore">
+				<h2>Computer</h2>
+				<p class="c-count count">0</p>
+
+			</div>
+		</div>
+	
+		<div class="move">Choose your move</div>
+		
+		<!--Number of moves left before game ends -->
+		<div class="movesleft">Moves Left: 10 </div>
+		
+		<!--Options available to player to play game -->
+		<div class="options">
+			<button class="rock">Rock</button>
+			<button class="paper">Paper</button>
+			<button class="scissor">Scissors</button>
+		</div>
+		
+		<!--Final result of game -->
+		<div class="result"></div>
+		
+		<!--Reload the game -->
+		<button class="reload"></button>
+
+	</section>
+
+	<script src="index.js"></script>
 </body>
 </html>
+
