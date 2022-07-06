@@ -1,7 +1,7 @@
 /* styles.css */
 /* universal selector - Applies to whole document */
 *{
-	padding: 0;
+	padding: 0rem;
 	margin: 0;
 	box-sizing: border-box;
 	background: #3d3e5d;
@@ -33,6 +33,7 @@
 	position: absolute;
 	top: 70px;
 	z-index: 1;
+	padding: 3rem;
 }
 
 /* Score */
